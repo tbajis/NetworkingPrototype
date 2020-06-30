@@ -13,7 +13,45 @@
 		1348955324A641520092BD94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1348955124A641520092BD94 /* Main.storyboard */; };
 		1348955524A641550092BD94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1348955424A641550092BD94 /* Assets.xcassets */; };
 		1348955824A641550092BD94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1348955624A641550092BD94 /* LaunchScreen.storyboard */; };
+		1348956824A642CE0092BD94 /* Networking.h in Headers */ = {isa = PBXBuildFile; fileRef = 1348956624A642CE0092BD94 /* Networking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1348956B24A642CE0092BD94 /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1348956424A642CE0092BD94 /* Networking.framework */; };
+		1348956C24A642CE0092BD94 /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1348956424A642CE0092BD94 /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1348957224A643010092BD94 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1348957124A643010092BD94 /* Request.swift */; };
+		1348957424A643F70092BD94 /* DarkSky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1348957324A643F70092BD94 /* DarkSky.swift */; };
+		1348957624A653BE0092BD94 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1348957524A653BE0092BD94 /* Response.swift */; };
+		1348957824A653DC0092BD94 /* DataTasker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1348957724A653DC0092BD94 /* DataTasker.swift */; };
+		1348957A24A659380092BD94 /* HTTPPerformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1348957924A659380092BD94 /* HTTPPerformer.swift */; };
+		1348957C24A664B00092BD94 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1348957B24A664B00092BD94 /* Client.swift */; };
+		1348958924A6D16B0092BD94 /* DarkSkyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1348958824A6D16B0092BD94 /* DarkSkyRequest.swift */; };
+		1348958B24A6D1A60092BD94 /* Client+Future.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1348958A24A6D1A60092BD94 /* Client+Future.swift */; };
+		1348958D24A6D22D0092BD94 /* HTTPDecodableResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1348958C24A6D22D0092BD94 /* HTTPDecodableResponse.swift */; };
+		1348958F24A6D2A50092BD94 /* HTTPTaskPerformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1348958E24A6D2A50092BD94 /* HTTPTaskPerformer.swift */; };
+		1348959124A6D2D00092BD94 /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1348959024A6D2D00092BD94 /* URLRequestBuilder.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1348956924A642CE0092BD94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1348954024A641520092BD94 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1348956324A642CE0092BD94;
+			remoteInfo = Networking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1348956D24A642CE0092BD94 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1348956C24A642CE0092BD94 /* Networking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1348954824A641520092BD94 /* NetworkingPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkingPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +62,32 @@
 		1348955424A641550092BD94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1348955724A641550092BD94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1348955924A641550092BD94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1348956424A642CE0092BD94 /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1348956624A642CE0092BD94 /* Networking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Networking.h; sourceTree = "<group>"; };
+		1348956724A642CE0092BD94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1348957124A643010092BD94 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		1348957324A643F70092BD94 /* DarkSky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkSky.swift; sourceTree = "<group>"; };
+		1348957524A653BE0092BD94 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		1348957724A653DC0092BD94 /* DataTasker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTasker.swift; sourceTree = "<group>"; };
+		1348957924A659380092BD94 /* HTTPPerformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPPerformer.swift; sourceTree = "<group>"; };
+		1348957B24A664B00092BD94 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		1348958824A6D16B0092BD94 /* DarkSkyRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkSkyRequest.swift; sourceTree = "<group>"; };
+		1348958A24A6D1A60092BD94 /* Client+Future.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Client+Future.swift"; sourceTree = "<group>"; };
+		1348958C24A6D22D0092BD94 /* HTTPDecodableResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPDecodableResponse.swift; sourceTree = "<group>"; };
+		1348958E24A6D2A50092BD94 /* HTTPTaskPerformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTaskPerformer.swift; sourceTree = "<group>"; };
+		1348959024A6D2D00092BD94 /* URLRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1348954524A641520092BD94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1348956B24A642CE0092BD94 /* Networking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1348956124A642CE0092BD94 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,7 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				1348954A24A641520092BD94 /* NetworkingPrototype */,
+				1348956524A642CE0092BD94 /* Networking */,
 				1348954924A641520092BD94 /* Products */,
+				1348958024A699440092BD94 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				1348954824A641520092BD94 /* NetworkingPrototype.app */,
+				1348956424A642CE0092BD94 /* Networking.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,7 +130,85 @@
 			path = NetworkingPrototype;
 			sourceTree = "<group>";
 		};
+		1348956524A642CE0092BD94 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				1348956624A642CE0092BD94 /* Networking.h */,
+				1348956724A642CE0092BD94 /* Info.plist */,
+				1348958324A6D0950092BD94 /* Client */,
+				1348958424A6D0A50092BD94 /* Request */,
+				1348958524A6D0B10092BD94 /* Response */,
+				1348958624A6D0EA0092BD94 /* HTTPPerformer */,
+				1348958724A6D0F60092BD94 /* DataTasker */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		1348958024A699440092BD94 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1348958324A6D0950092BD94 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				1348957B24A664B00092BD94 /* Client.swift */,
+				1348958A24A6D1A60092BD94 /* Client+Future.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		1348958424A6D0A50092BD94 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				1348957124A643010092BD94 /* Request.swift */,
+				1348958824A6D16B0092BD94 /* DarkSkyRequest.swift */,
+				1348959024A6D2D00092BD94 /* URLRequestBuilder.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		1348958524A6D0B10092BD94 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				1348957524A653BE0092BD94 /* Response.swift */,
+				1348958C24A6D22D0092BD94 /* HTTPDecodableResponse.swift */,
+				1348957324A643F70092BD94 /* DarkSky.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		1348958624A6D0EA0092BD94 /* HTTPPerformer */ = {
+			isa = PBXGroup;
+			children = (
+				1348957924A659380092BD94 /* HTTPPerformer.swift */,
+				1348958E24A6D2A50092BD94 /* HTTPTaskPerformer.swift */,
+			);
+			path = HTTPPerformer;
+			sourceTree = "<group>";
+		};
+		1348958724A6D0F60092BD94 /* DataTasker */ = {
+			isa = PBXGroup;
+			children = (
+				1348957724A653DC0092BD94 /* DataTasker.swift */,
+			);
+			path = DataTasker;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1348955F24A642CE0092BD94 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1348956824A642CE0092BD94 /* Networking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		1348954724A641520092BD94 /* NetworkingPrototype */ = {
@@ -77,15 +218,39 @@
 				1348954424A641520092BD94 /* Sources */,
 				1348954524A641520092BD94 /* Frameworks */,
 				1348954624A641520092BD94 /* Resources */,
+				1348956D24A642CE0092BD94 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1348956A24A642CE0092BD94 /* PBXTargetDependency */,
+			);
+			name = NetworkingPrototype;
+			packageProductDependencies = (
+			);
+			productName = NetworkingPrototype;
+			productReference = 1348954824A641520092BD94 /* NetworkingPrototype.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1348956324A642CE0092BD94 /* Networking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1348957024A642CE0092BD94 /* Build configuration list for PBXNativeTarget "Networking" */;
+			buildPhases = (
+				1348955F24A642CE0092BD94 /* Headers */,
+				1348956024A642CE0092BD94 /* Sources */,
+				1348956124A642CE0092BD94 /* Frameworks */,
+				1348956224A642CE0092BD94 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = NetworkingPrototype;
-			productName = NetworkingPrototype;
-			productReference = 1348954824A641520092BD94 /* NetworkingPrototype.app */;
-			productType = "com.apple.product-type.application";
+			name = Networking;
+			packageProductDependencies = (
+			);
+			productName = Networking;
+			productReference = 1348956424A642CE0092BD94 /* Networking.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +265,10 @@
 					1348954724A641520092BD94 = {
 						CreatedOnToolsVersion = 11.4;
 					};
+					1348956324A642CE0092BD94 = {
+						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
+					};
 				};
 			};
 			buildConfigurationList = 1348954324A641520092BD94 /* Build configuration list for PBXProject "NetworkingPrototype" */;
@@ -111,11 +280,14 @@
 				Base,
 			);
 			mainGroup = 1348953F24A641520092BD94;
+			packageReferences = (
+			);
 			productRefGroup = 1348954924A641520092BD94 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				1348954724A641520092BD94 /* NetworkingPrototype */,
+				1348956324A642CE0092BD94 /* Networking */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +300,13 @@
 				1348955824A641550092BD94 /* LaunchScreen.storyboard in Resources */,
 				1348955524A641550092BD94 /* Assets.xcassets in Resources */,
 				1348955324A641520092BD94 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1348956224A642CE0092BD94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +323,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1348956024A642CE0092BD94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1348959124A6D2D00092BD94 /* URLRequestBuilder.swift in Sources */,
+				1348958D24A6D22D0092BD94 /* HTTPDecodableResponse.swift in Sources */,
+				1348958F24A6D2A50092BD94 /* HTTPTaskPerformer.swift in Sources */,
+				1348958924A6D16B0092BD94 /* DarkSkyRequest.swift in Sources */,
+				1348957224A643010092BD94 /* Request.swift in Sources */,
+				1348957C24A664B00092BD94 /* Client.swift in Sources */,
+				1348957A24A659380092BD94 /* HTTPPerformer.swift in Sources */,
+				1348957624A653BE0092BD94 /* Response.swift in Sources */,
+				1348958B24A6D1A60092BD94 /* Client+Future.swift in Sources */,
+				1348957424A643F70092BD94 /* DarkSky.swift in Sources */,
+				1348957824A653DC0092BD94 /* DataTasker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1348956A24A642CE0092BD94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1348956324A642CE0092BD94 /* Networking */;
+			targetProxy = 1348956924A642CE0092BD94 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1348955124A641520092BD94 /* Main.storyboard */ = {
@@ -283,6 +488,7 @@
 		1348955D24A641550092BD94 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BN7EJLU57R;
@@ -301,6 +507,7 @@
 		1348955E24A641550092BD94 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BN7EJLU57R;
@@ -313,6 +520,63 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1348956E24A642CE0092BD94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = BN7EJLU57R;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Networking/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bajis-development.Networking";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1348956F24A642CE0092BD94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = BN7EJLU57R;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Networking/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bajis-development.Networking";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -333,6 +597,15 @@
 			buildConfigurations = (
 				1348955D24A641550092BD94 /* Debug */,
 				1348955E24A641550092BD94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1348957024A642CE0092BD94 /* Build configuration list for PBXNativeTarget "Networking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1348956E24A642CE0092BD94 /* Debug */,
+				1348956F24A642CE0092BD94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
